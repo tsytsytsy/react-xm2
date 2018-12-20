@@ -4,12 +4,15 @@ import Home from "./components/home/home"
 import Buy from "./components/buy/buy"
 import Shop from "./components/shop/shop"
 import Find from "./components/find/find"
-import My from "./components/my/my"
+import My from "./components/my/my";
+import store from "./store"
+import {Provider} from "react-redux";
 
 
 class App extends Component {
   render() {
     return (
+    	<Provider store={store}>
       <HashRouter>
       	<div>
 	      	<Switch>
@@ -23,6 +26,7 @@ class App extends Component {
 	      	</Switch>
       	</div>
       </HashRouter>
+      </Provider>
     );
   }
 }
