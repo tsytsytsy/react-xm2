@@ -7,13 +7,13 @@ export default class Header extends Component{
 	render(){
 		return(
 			<div id="header">
-				<div id="logo">我是logo</div>
+				<div id="logo"></div>
 				<ul>
 					<li><NavLink to="/home">首页</NavLink></li>
 					<li><NavLink to="/buy">购票</NavLink></li>
 					<li><NavLink to="/shop">商城</NavLink></li>
 					<li><NavLink to="/find">发现</NavLink></li>
-					<li><NavLink to="/my">我的</NavLink></li>
+					<li><NavLink to="/my"><i className="fa fa-user-o"></i></NavLink></li>
 				</ul>
 			</div>
 		)

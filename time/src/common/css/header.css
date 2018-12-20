@@ -3,9 +3,15 @@
 	height: 1.06rem;
 	display: flex;
 	background: #333333;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: space-around;
 }
 #header>#logo{
+	background: url(../img/logo_mtime.png) no-repeat;
+	background-size: contain;
+	background-origin: content-box;
+	width: 1.24rem;
+	height: 0.42rem;
 	color: #bbb;
 	display: flex;
 	align-items: center;
@@ -20,7 +26,9 @@
 	display: flex;
 	width: 100%;
 	align-items: center;
+	justify-content: flex-end;
 	height: 100%;
+	font-size: 0.32rem;
 }
 #header>ul>li>.active{
 	color: #FFFFFF;

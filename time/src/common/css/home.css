@@ -1,0 +1,85 @@
+#search{
+	width: 100%;
+	height: 1.23rem;
+	display: flex;
+	padding: 0.18rem 0.36rem;
+	background: #f6f6f6;
+}
+#search>#search_left{
+	width: 1.2rem;
+	display: flex;
+	align-items: center;
+	font-size: 0.32rem;
+	justify-content: flex-start;
+}
+#search>#search_left>i{
+	color: #bbb;
+	padding-left: 0.1rem;
+}
+#search>#search_right{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+#search>#search_right>p{
+	width: 100%;
+	height: 100%;
+	background:#fff;
+	border: 0.01rem solid #bbb;
+	border-radius: 0.1rem;
+	display: flex;
+	justify-content: center;
+}
+#search>#search_right>p>input{
+	display: flex;
+	height: 100%;
+	font-size: 0.32rem;
+	color: #777;
+	border-radius: 0.1rem;
+	border: none;
+	width: 80%;
+}
+#search>#search_right>p>i{
+	display: flex;
+	font-size: 0.40rem;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	color: #BBBBBB;
+}
+
+
+/*正在上映*/
+#nowshowing_title{
+	flex-direction: column;
+	display: flex;
+	padding: 0.12rem 0.36rem;
+	width: 100%;
+	height: 8.32rem;
+	border-bottom: 0.01rem solid #bbb;
+}
+#nowshowing_title>h1{
+	width: 6.78rem;
+	height: 0.84rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#nowshowing_title>ul{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+}
+#nowshowing_title>ul>li{
+	width: 25%;
+}
+#nowshowing_title>ul>li>img{
+	width: 90%;
+	height: 60%;
+}
+#nowshowing_title>ul>li>p{
+	font-size: 0.32rem;
+	padding-top: 0.3rem;
+	text-align: center;
+}
