@@ -1,0 +1,188 @@
+#details_transparent{
+	width: 100%;
+	height: .4rem;
+	background: #eee;
+}
+#details{
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.
+#details::-webkit-scrollbar {
+	display:none;
+}
+
+
+/* 头部返回收藏分享  */
+#details_header{
+	width: 100%;
+	height:1.05rem ;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.4rem;
+	font-size: 0.6rem;
+	align-items: center;
+	color: #fff;
+	position: relative;
+	z-index: 9;
+}
+#details_header>div:nth-child(2){
+	width: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+#details_header>div>a{
+	color: #fff;
+}
+
+/* 头部背景 */
+#details_bkground{
+	width: 100%;
+	height: 3.36rem;
+	margin-top: -1.05rem;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#details_bkground>img{
+	width: 100%;
+}
+#details_bkground>#white{
+	background: #FFFFFF;
+	height: 30%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+#details_bkground>.mask{
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #333;
+	opacity: 0.5;
+}
+
+/* 影片详细信息 */
+#movie_details{
+	width: 100%;
+	height: 3.84rem;
+	margin-top: -2.31rem;
+	position: relative;
+	z-index: 5;
+	display: flex;
+	padding-left: 0.36rem;
+	justify-content: space-between;
+}
+#movie_details>div:nth-child(1){
+	width: 2.52rem;
+	height: 3.74rem;
+	border: 0.05rem solid #fff;
+}
+#movie_details>div:nth-child(1)>img{
+	width:100%;
+	height: 100%;
+}
+#movie_details>div:nth-child(2){
+	width: 4.28rem;
+	height:3.74rem;
+	
+}
+#movie_details>div:nth-child(2)>header{
+	height: 0.94rem;
+	margin: 0.12rem 0 0.38rem;
+	font-size: 0.26rem;
+	color: #fff;
+	position: relative;
+}
+#movie_details>div:nth-child(2)>header>span{
+	display: block;
+	width: 0.67rem;
+	height: 0.67rem;
+	background: #659d0e;
+	position: absolute;
+	bottom: -.5rem;
+	right: 0.4rem;
+	font-size: 0.3rem;
+	line-height: 0.67rem;
+	text-align: center;
+	font-weight: bold;
+}
+#movie_details>div:nth-child(2)>section{
+	font-size: 0.26rem;
+	line-height: 0.4rem;
+	font-weight: bold;
+	
+	right: 0.2rem;
+}
+#movie_details>div:nth-child(2)>footer{
+	width: 100%;
+	height: 0.8rem;
+	display: flex;
+	margin-top: 0.2rem;
+}
+#movie_details>div:nth-child(2)>footer>div{
+	width: 1.89rem;
+	display: flex;
+	height: 100%;
+	border: 0.02rem solid #999;
+	color: #777;
+	border-radius: 0.8rem;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.32rem;
+	margin-right: 0.2rem;
+}
+
+/* 影片一句话描述   */
+#details_discrip{
+	width: 100%;
+	height:2.34rem;
+	text-align: center;
+}
+#details_discrip>h3{
+	font-size: 0.34rem;
+	font-weight: 100;
+	color: #fd8900;
+}
+#details_discrip>button{
+	width: 6.74rem;
+	height:0.95rem;
+	border: none;
+	background: #fd8900;
+	color: #FFFFFF;
+	border-radius: 0.95rem;
+	margin-top: 0.3rem;
+	font-weight: bold;
+	font-size: 0.4rem;
+}
+
+/* 影片简介  */
+#details_abstract{
+	font-size: 0.36rem;
+	width: 100%;
+	padding: 0.26rem 0.36rem 0;
+	text-align: center;
+}
+#details_abstract>p{
+	width: 100%;
+	height: 0.98rem;
+	margin-bottom: 0.15rem;
+	overflow:hidden;
+}
+#details_abstract>i{
+	margin-bottom: .1rem;
+}
+
+/* 影片演员 */
+#details_actors{
+	width: 100%;
+	height: 6.76rem;
+	background: #cfc;
+}
+

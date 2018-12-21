@@ -16,12 +16,26 @@ class Home extends Component{
 			<div>
 				<Header/>
 				<Search/>
-				<NowShowing movieList={movieList} movieListNum={movieListNum}/>
+				<NowShowing movieList={movieList} movieListNum={movieListNum} tonowshowlist={this.tonowshowList.bind(this)} todetail={this.todetail.bind(this)}/>
 			</div>
 		)
 	}
 	componentDidMount(){
 		this.props.getMovieData();
+	}
+	//去正在热播列表
+	tonowshowList(){
+		this.props.history.push("/nowshowList");
+	}
+	//去详情页
+	todetail(index){
+		this.props.history.push({
+			pathname:"/details",
+			state:{
+				id:index,
+				movieId:this.props.movieList[index].movieId
+			}
+		})
 	}
 }
 const mapStateToProps = (state)=>({
@@ -33,6 +47,7 @@ const mapDispatchToProps = (dispatch)=>({
 	getMovieData(){
 		dispatch(movie_data())
 	}
+	
 })
 
 
