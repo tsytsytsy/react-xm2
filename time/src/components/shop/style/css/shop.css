@@ -1,0 +1,44 @@
+/* search部分 */
+#searchbox {
+    width : 100%;
+    height: 1.07rem;
+    padding: 0 0.12rem 0  0.36rem;
+    background:#F6F6F6;
+}
+#mallserch{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#data-search{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.59rem 0 0.656rem;
+    line-height: 1.07rem;
+    background: #FFFFFF;
+    border-radius: 0.2rem;
+    color: #777777;
+}
+#sech{
+    font-size: 0.45rem;
+}
+#word{
+    font-size: 0.35rem;
+}
+#shopcar{
+    display: block;
+    width : 0.96rem;
+    height: 1.05rem;
+}
+#shopingcar{
+    display: inline-block;
+    font-size: 0.7rem;
+    line-height: 1.07rem;
+    color:  #0075C4;
+}
+
+
+/* banner部分 */
+
+
