@@ -24,6 +24,5 @@ export default class nowShowing extends Component{
 		)
 	}
 	componentDidMount(){
-		console.log(this.props)
 	}
 }
