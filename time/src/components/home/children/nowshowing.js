@@ -23,11 +23,7 @@ export default class nowShowing extends Component{
 			</div>
 		)
 	}
-<<<<<<< HEAD
 	tonowshowlist(){
 		this.props.tonowshowlist()
-=======
-	componentDidMount(){
->>>>>>> yang
 	}
 }

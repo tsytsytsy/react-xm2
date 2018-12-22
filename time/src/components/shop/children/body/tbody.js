@@ -7,37 +7,51 @@ import MallAct from "./section/mallAct"
 import Shops from "./section/shops"
 import "../../style/css/shop.css"
 import { connect } from "react-redux"
-import { getData_action } from "../../../../action/actionCreator"
+import { getData_action, get_index } from "../../../../action/actionCreator"
 import BScroll from 'better-scroll'
 class Tbody extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            index : 0
+        }
+    }
     render() {
-        let { mallNavList } = this.props;
+        let { mallNavList, cIndex } = this.props;
         return (
             <div className="wrapper" ref="wrapper">
-            <div className="content">
-                <Search />
-                <Banner mallNavList={mallNavList}/>
-                <MallNav mallNavList={mallNavList} />
-                <MallShop mallNavList={mallNavList} />
-                <MallAct  mallNavList={mallNavList}/>
-                <Shops />
-            </div>
+                <div className="content">
+                    <Search />
+                    <Banner mallNavList={mallNavList} />
+                    <MallNav mallNavList={mallNavList} />
+                    <MallShop mallNavList={mallNavList} />
+                    <MallAct mallNavList={mallNavList} func={this.props.handleGetIdx} cIndex={cIndex}  />
+                    <Shops />
+                </div>
             </div>
         )
     }
+    handleGetIdx(index){
+        alert(this.props.index)
+    }
     componentDidMount() {
         this.props.getData();
-      const scroll =  new BScroll(this.refs.wrapper)
-      console.log(scroll)
+        this.props.handleGetIdx();
+        const scroll = new BScroll(this.refs.wrapper, {
+            click: true
+        });
     }
 }
 const mapStateToProps = (state) => ({
-    mallNavList : state.shops.mallNavList
+    mallNavList: state.shops.mallNavList,
+    cIndex: state.shops.curindex
 })
 const mapDispatchToProps = (dispatch) => ({
     getData() {
-        // dispatch(movie_data());
         dispatch(getData_action())
+    },
+    handleGetIdx(index) {
+        dispatch(get_index(index))
     }
 })
 export default connect(mapStateToProps, mapDispatchToProps)(Tbody)

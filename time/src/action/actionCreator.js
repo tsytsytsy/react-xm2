@@ -1,20 +1,11 @@
 import {fetch} from "whatwg-fetch";
 
-<<<<<<< HEAD
-=======
-// export const movie_data = () =>({
-//     type : "MOVIE_DATA",
-//     payload : new Promise(resolve=>{
-//         let url = "/PageSubArea/HotPlayMovies.api?locationId=290"
-//         fetch(url)
-//         .then(res=>res.json())
-//         .then((data)=>{
-//             resolve(data)
-//         })
-//     })
-// })
+export const get_index = (index) =>({   
+    type : "GET_INDEX",
+    idx : index
+})
 
->>>>>>> yang
+
 export const getData_action = () =>({
     type : "MALL_NAV",
     payload : new Promise(resolve=>{
