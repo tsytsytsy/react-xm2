@@ -5,7 +5,7 @@ const defaultState = {
 }
 
 export default (state=defaultState,action)=>{
-	console.log(action.type);//type后会加pending(请求中)和fulfilled(请求完成)
+	// console.log(action.type);//type后会加pending(请求中)和fulfilled(请求完成)
 	switch(action.type){
 		case "MOVIE_DATA_FULFILLED":
 			let movieListState = JSON.parse(JSON.stringify(state));
