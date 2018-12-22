@@ -1,0 +1,154 @@
+#willshow{
+	overflow-y: scroll;
+}
+
+#coming_header{
+	width: 100%;
+	height: 1.05rem;
+	background: #555;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	padding-left: 0.3rem;
+	justify-content: space-around;
+}
+#coming_header>a{
+	color: #fff;
+	font-size: 0.4rem;
+}
+#coming_header>div{
+	width: 5.12rem;
+	height: .64rem;
+	display: flex;
+	border-radius: .64rem;
+	font-size: 0.32rem;
+	border: 0.03rem solid #333;
+}
+#coming_header>div>span{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0.03rem solid #333;
+	border-radius: .64rem;
+}
+#coming_header>div>span:last-child{
+	background: #333;
+}
+#coming_header>div>span:first-child{
+	border: 0;
+}
+
+/* 最受关注 */
+#willshow_attention{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 7.7rem;
+	padding: 0.28rem 0;
+}
+#willshow_attention>h2{
+	padding-left: 0.36rem;
+}
+#willshow_attention>h2>span{
+	color: #999;
+	margin-left: 0.2rem;
+}
+#willshow_attention>#ws_atten_box{
+	padding-left: 0.36rem;
+	width: 100%;
+	height: 4.03rem;
+	padding: 0.5rem;
+}
+#willshow_attention>#ws_atten_box>div:first-child{
+	width: 6.62rem;
+	height: 3.12rem;
+	padding: 0.36rem 0.12rem 0 0;
+	border-top: 0.02rem solid #bbb;
+	border-right: 0.02rem solid #bbb;
+}
+#willshow_attention>#ws_atten_box>div>img{
+	width: 2.0rem;
+	height: 3.02rem;
+	float: left;
+}
+#willshow_attention>#ws_atten_box>div>div{
+	float: right;
+	width: 4.22rem;
+	height: 3.12rem;
+}
+#willshow_attention>#ws_atten_box>div>div>h2{
+	margin-bottom: 0.2rem;
+}
+#willshow_attention>#ws_atten_box>div>div>p{
+	line-height: 0.4rem;
+}
+#willshow_attention>#ws_atten_box>div>div>p>span{
+	color: #ff8600;
+	margin-right: 0.2rem;
+}
+#willshow_attention>#ws_atten_box>div>div>button{
+	width: 1.89rem;
+	height:0.68rem;
+	margin-top: 0.4rem;
+	color: #659c0d;
+	border: 0.02rem solid #659c0d;
+	border-radius: 0.68rem;
+	background: #fff;
+	font-size: 0.34rem;
+	font-weight: bold;
+}
+#willshow_attention>.twopic_container{
+	width: 100%;
+	height: 2.1rem;
+	margin-top: 0.3rem;
+}
+#willshow_attention>.twopic_container>.swiper-slide{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* 即将上映列表 */
+#willshow_list{
+	width: 100%;
+	background: #cfc;
+	padding-left: .36rem;
+}
+#willshow_list>h1{
+	font-size: 0.4rem;
+}
+#willshow_list>h1>span{
+	color: #777777;
+}
+#willshow_list>div>p{
+	line-height: 0.88rem;
+	font-size: 0.3rem;
+	border-bottom: 0.02rem solid #777777;
+}
+#willshow_list>div>ul{
+	
+}
+#willshow_list>div>ul>li{
+	display: flex;
+	justify-content: space-between;
+	height: 3.04rem;
+	width: 100%;
+	padding:0.36rem 0 0.33rem 0;
+}
+#willshow_list>div>ul>li>p{
+	font-size: 0.3rem;
+	display: flex;
+}
+#willshow_list>div>ul>li>div{
+	display: flex;
+	width: 6.4rem;
+}
+#willshow_list>div>ul>li>div>img{
+	width: 1.52rem;
+	height: 100%;
+}
+#willshow_list>div>ul>li>div>div{
+	padding-left: 0.36rem;
+}

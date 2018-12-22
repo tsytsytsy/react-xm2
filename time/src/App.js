@@ -6,6 +6,7 @@ import Shop from "./components/shop/shop"
 import Find from "./components/find/find"
 import My from "./components/my/my";
 import NowshowList from "./components/home/nowshowList"
+import WillshowList from "./components/home/willshowList"
 import Details from "./components/home/children/details"
 import store from "./store"
 import {Provider} from "react-redux";
@@ -23,7 +24,10 @@ class App extends Component {
 	      		<Route path="/shop" component={Shop}/>
 	      		<Route path="/find" component={Find}/>
 	      		<Route path="/my" component={My}/>
+	      		
+	      		{/*home中的路由*/}
 	      		<Route path="/nowshowList" component={NowshowList}/>
+	      		<Route path="/willshowList" component={WillshowList}/>
 	      		<Route path="/details" component={Details}/>
 	      		
 	      		<Redirect path="/" to="/home"/>

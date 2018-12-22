@@ -9,7 +9,6 @@ export default class Abstract extends Component{
 	}
 	render(){
 		let {flag} = this.state;
-		console.log(this.props)
 		return(
 			<div id="details_abstract">
 				<p style={{height:flag?"0.98rem":"auto"}}>{this.props.movieDetails}</p>

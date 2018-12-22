@@ -4,7 +4,7 @@ import React,{Component} from "react";
 
 export default class nowShowing extends Component{
 	render(){
-		let {movieList,movieListNum} = this.props
+		let {movieList,movieListNum,willshowNum} = this.props
 		return(
 			<div id="nowshowing">
 				<div id="nowshowing_title">
@@ -19,15 +19,18 @@ export default class nowShowing extends Component{
 							})
 						}
 					</ul>
+					<h1 onClick = {this.towillshowlist.bind(this)}>正在热播( {willshowNum} 部)<i className="fa fa-angle-right"></i></h1>
 				</div>
 			</div>
 		)
 	}
-<<<<<<< HEAD
 	tonowshowlist(){
 		this.props.tonowshowlist()
-=======
+	}
+	towillshowlist(){
+		this.props.towillshowlist()
+	}
 	componentDidMount(){
->>>>>>> yang
+		
 	}
 }

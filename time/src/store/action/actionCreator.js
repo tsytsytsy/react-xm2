@@ -33,14 +33,30 @@ export const detail_data = (id) =>({
 //https://api-m.mtime.cn/Movie/MovieCreditsWithTypes.api?movieId=217896
 //http://localhost:3000/Movie/MovieCreditsWithTypes.api?movieId=228745
 //https://api-m.mtime.cn/Movie/MovieCreditsWithTypes.api?movieId=?
-export const actor_data = () =>({
+//https://api-m.mtime.cn/Movie/MovieCreditsWithTypes.api?movieId=217896
+//https://api-m.mtime.cn/Movie/MovieCreditsWithTypes.api?movieId=217896
+export const actor_data = (id) =>({
 	type:"ACTOR_DATA",
 	payload:new Promise(resolve=>{
-		let url="/Movie/MovieCreditsWithTypes.api?movieId=217896";
+		let url="/Movie/MovieCreditsWithTypes.api?movieId=" + id;
 		fetch(url)
 		.then(res=>res.json())
 		.then((data)=>{
 			console.log(data)
+			resolve(data)
+		})
+	})
+})
+
+
+//https://api-m.mtime.cn/Movie/MovieComingNew.api?locationId=290
+export const willshow_data = (id) =>({
+	type:"WILLSHOW_DATA",
+	payload:new Promise(resolve=>{
+		let url="/Movie/MovieComingNew.api?locationId=290";
+		fetch(url)
+		.then(res=>res.json())
+		.then((data)=>{
 			resolve(data)
 		})
 	})

@@ -17,6 +17,7 @@ class Details extends Component{
 		this.state={
 			index:this.props.location.state.id
 		}
+		//console.log(this.props.movieList)
 		console.log(this.props.location.state.movieId)
 	}
 	render(){
@@ -58,8 +59,8 @@ const mapDispatchToProps = (dispatch)=>({
 	getDetailData(movieid){
 		dispatch(detail_data(movieid))
 	},
-	getActorsData(){
-		dispatch(actor_data())
+	getActorsData(movieId){
+		dispatch(actor_data(movieId))
 	}
 })
 

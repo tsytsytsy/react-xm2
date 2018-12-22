@@ -1,23 +1,21 @@
 const proxy = require("http-proxy-middleware");
 
-
+//https://api-m.mtime.cn
 module.exports = (app)=>{
 	app.use("/PageSubArea",proxy({
 		target:"https://api-m.mtime.cn",
 		changeOrigin:true
-<<<<<<< HEAD
 	}))
 	app.use("/movie",proxy({
 		target:"https://ticket-api-m.mtime.cn",
 		changeOrigin:true
 	}))
 	app.use("/Movie",proxy({
-		target:"https://ticket-api-m.mtime.cn",
-=======
+		target:"https://api-m.mtime.cn",
+		changeOrigin:true
 	})),
 	app.use("/Service",proxy({
 		target:"http://m.mtime.cn",
->>>>>>> yang
 		changeOrigin:true
 	}))
 } 
