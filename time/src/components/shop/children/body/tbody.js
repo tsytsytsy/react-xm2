@@ -5,9 +5,11 @@ import MallNav from "./section/mallNav"
 import MallShop from "./section/mallShop"
 import MallAct from "./section/mallAct"
 import Shops from "./section/shops"
+import Recommend from "./section/recommend"
+import MallOther from "./section/mallother"
 import "../../style/css/shop.css"
 import { connect } from "react-redux"
-import { getData_action, get_index } from "../../../../action/actionCreator"
+import { getData_action, get_index ,getMall_other} from "../../../../action/actionCreator"
 import BScroll from 'better-scroll'
 class Tbody extends Component {
     constructor(props){
@@ -17,7 +19,7 @@ class Tbody extends Component {
         }
     }
     render() {
-        let { mallNavList, cIndex } = this.props;
+        let { mallNavList, cIndex,mallOtherList } = this.props;
         return (
             <div className="wrapper" ref="wrapper">
                 <div className="content">
@@ -26,7 +28,9 @@ class Tbody extends Component {
                     <MallNav mallNavList={mallNavList} />
                     <MallShop mallNavList={mallNavList} />
                     <MallAct mallNavList={mallNavList} func={this.props.handleGetIdx} cIndex={cIndex}  />
-                    <Shops />
+                    <Shops mallNavList={mallNavList} />
+                    <Recommend />
+                    <MallOther mallOtherList={mallOtherList}/>
                 </div>
             </div>
         )
@@ -37,6 +41,7 @@ class Tbody extends Component {
     componentDidMount() {
         this.props.getData();
         this.props.handleGetIdx();
+        this.props.handleGetMallOther();
         const scroll = new BScroll(this.refs.wrapper, {
             click: true
         });
@@ -44,7 +49,8 @@ class Tbody extends Component {
 }
 const mapStateToProps = (state) => ({
     mallNavList: state.shops.mallNavList,
-    cIndex: state.shops.curindex
+    cIndex: state.shops.curindex,
+    mallOtherList : state.shops.mallOtherList
 })
 const mapDispatchToProps = (dispatch) => ({
     getData() {
@@ -52,6 +58,9 @@ const mapDispatchToProps = (dispatch) => ({
     },
     handleGetIdx(index) {
         dispatch(get_index(index))
+    },
+    handleGetMallOther(){
+        dispatch(getMall_other())
     }
 })
 export default connect(mapStateToProps, mapDispatchToProps)(Tbody)
