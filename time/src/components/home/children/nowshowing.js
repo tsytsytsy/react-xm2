@@ -26,14 +26,12 @@ export default class nowShowing extends Component{
 	}
 	tonowshowlist(){
 		this.props.tonowshowlist()
-<<<<<<< HEAD
 	}
 	towillshowlist(){
 		this.props.towillshowlist()
 	}
 	componentDidMount(){
 		
-=======
->>>>>>> yang
+
 	}
 }
