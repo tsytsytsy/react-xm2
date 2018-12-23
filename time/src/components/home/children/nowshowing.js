@@ -20,6 +20,7 @@ export default class nowShowing extends Component{
 						}
 					</ul>
 					<h1 onClick = {this.towillshowlist.bind(this)}>正在热播( {willshowNum} 部)<i className="fa fa-angle-right"></i></h1>
+					
 				</div>
 			</div>
 		)

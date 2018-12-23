@@ -14,12 +14,13 @@ export default class WillShow extends Component{
 		console.log(this.state)
 	}
 	render(){
+		let {attention,moviecomings} = this.state
 		return(
 			<div id="willshow">
 				<Header/>
 				<Search/>
-				<Attention attention={this.state.attention}/>
-				<WSList wsList={this.state.moviecomings}/>
+				<Attention attention={attention}/>
+				<WSList wsList={moviecomings}/>
 			</div>
 		)
 	}

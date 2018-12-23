@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Loadable from "react-loadable";
 import {HashRouter,Route,Link,Switch,NavLink,Redirect} from "react-router-dom" 
 import Home from "./components/home/home"
 import Buy from "./components/buy/buy"
@@ -10,7 +11,10 @@ import WillshowList from "./components/home/willshowList"
 import Details from "./components/home/children/details"
 import store from "./store"
 import {Provider} from "react-redux";
-
+/*const Home = Loadable({
+	loader:()=>import("./components/home/home"),
+	loading:"loading"
+})*/
 
 class App extends Component {
   render() {

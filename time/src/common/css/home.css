@@ -1,3 +1,10 @@
+#home{
+	overflow-y: scroll;
+}
+#home>img{
+	width: 100%;
+	
+}
 #search{
 	width: 100%;
 	height: 1.23rem;
@@ -82,4 +89,30 @@
 	font-size: 0.32rem;
 	padding-top: 0.3rem;
 	text-align: center;
+}
+
+/* 今日热点 */
+#newPoints{
+	padding: 0.12rem 0.36rem;
+}
+#newPoints>ul>li{
+	width: 100%;
+	height: 2.54rem;
+	padding: 0.31rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+#newPoints>ul>li>img{
+	height: 100%;
+}
+#newPoints>ul>li>div{
+	width: 3.85rem;
+	height: 1.92rem;
+}
+#newPoints>ul>li>div>p{
+	line-height: 0.5rem;
+	color: #999999;
+}
+#newPoints>ul>li>div>p:first-of-type{
+	font-size: 0.3rem;
 }

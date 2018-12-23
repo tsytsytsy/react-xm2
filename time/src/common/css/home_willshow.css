@@ -113,7 +113,6 @@
 /* 即将上映列表 */
 #willshow_list{
 	width: 100%;
-	background: #cfc;
 	padding-left: .36rem;
 }
 #willshow_list>h1{
@@ -151,4 +150,12 @@
 }
 #willshow_list>div>ul>li>div>div{
 	padding-left: 0.36rem;
+}
+#willshow_list>div>ul>li>div>div>p{
+	line-height: 0.5rem;
+	font-size: 0.3rem;
+}
+#willshow_list>div>ul>li>div>div>p>span{
+	color:#ff8600;
+	margin-right: 0.2rem;
 }

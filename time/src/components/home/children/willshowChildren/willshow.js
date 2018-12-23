@@ -22,7 +22,47 @@ export default class WSList extends Component{
 													<img src={item.image}/>
 													<div>
 														<h2>{item.title}</h2>
-														<p><span>{item.wantCount}</span>人想看-{item.type}</p>
+														<p><span>{item.wantedCount}</span>人想看-{item.type}</p>
+														<p>导演 : {item.director}</p>
+													</div>
+												</div>
+									   		</li>
+								}
+							})
+						}
+					</ul>
+					<p>1月</p>
+					<ul>
+						{
+							this.state.map((item,index)=>{
+								if(item.rMonth==1){
+									return <li key={index}>
+												<p>{item.rDay}日</p>
+												<div>
+													<img src={item.image}/>
+													<div>
+														<h2>{item.title}</h2>
+														<p><span>{item.wantedCount}</span>人想看-{item.type}</p>
+														<p>导演 : {item.director}</p>
+													</div>
+												</div>
+									   		</li>
+								}
+							})
+						}
+					</ul>
+					<p>2月</p>
+					<ul>
+						{
+							this.state.map((item,index)=>{
+								if(item.rMonth==2){
+									return <li key={index}>
+												<p>{item.rDay}日</p>
+												<div>
+													<img src={item.image}/>
+													<div>
+														<h2>{item.title}</h2>
+														<p><span>{item.wantedCount}</span>人想看-{item.type}</p>
 														<p>导演 : {item.director}</p>
 													</div>
 												</div>
