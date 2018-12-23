@@ -1,5 +1,6 @@
 import {fetch} from "whatwg-fetch";
 
+<<<<<<< HEAD
 // export const movie_data = () =>({
 //     type : "MOVIE_DATA",
 //     payload : new Promise(resolve=>{
@@ -11,6 +12,13 @@ import {fetch} from "whatwg-fetch";
 //         })
 //     })
 // })
+=======
+export const get_index = (index) =>({   
+    type : "GET_INDEX",
+    idx : index
+})
+
+>>>>>>> yang
 
 export const getData_action = () =>({
     type : "MALL_NAV",

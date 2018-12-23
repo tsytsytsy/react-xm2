@@ -6,14 +6,17 @@ module.exports = (app)=>{
 		target:"https://api-m.mtime.cn",
 		changeOrigin:true
 	}))
-	app.use("/movie",proxy({
+	app.use("/Movie",proxy({
 		target:"https://ticket-api-m.mtime.cn",
 		changeOrigin:true
 	}))
+<<<<<<< HEAD
 	app.use("/Movie",proxy({
 		target:"https://api-m.mtime.cn",
 		changeOrigin:true
 	})),
+=======
+>>>>>>> yang
 	app.use("/Service",proxy({
 		target:"http://m.mtime.cn",
 		changeOrigin:true
@@ -24,3 +27,4 @@ module.exports = (app)=>{
 
 
 //http://m.mtime.cn/Service/callback.mi/PageSubArea/MarketFirstPageNew.api?t=201812211561993907
+
