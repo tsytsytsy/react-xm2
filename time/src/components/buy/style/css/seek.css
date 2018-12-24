@@ -1,0 +1,73 @@
+#seek{
+	width: 100%;
+	height: 1.23rem;
+	display: flex;
+	padding: 0.18rem 0.36rem;
+	background: #f6f6f6;
+}
+#seekh>#seek_left{
+	width: 1.2rem;
+	display: flex;
+	align-items: center;
+	font-size: 0.32rem;
+	justify-content: flex-start;
+}
+/* #seek_left{
+	display: flex;
+	width: 50px;
+} */
+#seek_left>span{
+	font-size: 30px;
+	line-height: 80px;
+}
+#seek>#seek_left>i{
+	color: #bbb;
+	position: relative;
+	left: 80px;
+	top: -50px;
+	font-size: 30px;
+	
+}
+
+
+
+
+#seek>#seek_right{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	padding-left: 15px;
+}
+#seek>#seek_right>p{
+	width: 60%;
+	height: 100%;
+	background:#fff;
+	border: 0.01rem solid #bbb;
+	border-radius: 0.1rem;
+	display: flex;
+	padding-left: 15px;
+}
+#seek>#seek_right>p>input{
+	display: flex;
+	height: 100%;
+	font-size: 0.32rem;
+	color: #777;
+	border-radius: 0.1rem;
+	border: none;
+	width: 80%;
+	
+}
+#seek>#seek_right>p>i{
+	display: flex;
+	font-size: 0.40rem;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	color: #BBBBBB;
+}
+#seek_right> a{
+	font-size:0.3rem;
+	padding-left: 65px;
+	padding-top: 24px;
+}
