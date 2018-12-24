@@ -28,3 +28,14 @@ export const getData_action = () =>({
         })
     })
 })
+export const getMall_other = () =>({
+    type : "MALL_OTHER",
+    payload : new Promise(resolve=>{
+        let url = "/Service/callback.mi/ECommerce/RecommendProducts.api?t=201812231911984354&goodsIds=&pageIndex=1"
+        fetch(url)
+        .then(res=>res.json())
+        .then((data)=>{
+            resolve(data)
+        })
+    })
+})
