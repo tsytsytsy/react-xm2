@@ -31,7 +31,7 @@ class Banner extends Component {
                     el: '.swiper-pagination',
                   }
             })
-        },300)
+        },2000)
     }
 }
 

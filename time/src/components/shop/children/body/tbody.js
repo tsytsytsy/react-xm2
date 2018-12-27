@@ -7,6 +7,8 @@ import MallAct from "./section/mallAct"
 import Shops from "./section/shops"
 import Recommend from "./section/recommend"
 import MallOther from "./section/mallother"
+import FootMore from "./section/loading"
+import FooterNav from "./section/footerNav"
 import "../../style/css/shop.css"
 import { connect } from "react-redux"
 import { getData_action, get_index ,getMall_other} from "../../../../action/actionCreator"
@@ -31,6 +33,8 @@ class Tbody extends Component {
                     <Shops mallNavList={mallNavList} />
                     <Recommend />
                     <MallOther mallOtherList={mallOtherList}/>
+                    <FootMore />
+                    <FooterNav />
                 </div>
             </div>
         )
@@ -42,10 +46,12 @@ class Tbody extends Component {
         this.props.getData();
         this.props.handleGetIdx();
         this.props.handleGetMallOther();
-        const scroll = new BScroll(this.refs.wrapper, {
-            click: true
+        this.scroll = new BScroll(this.refs.wrapper, {
+            click: true,
+            pullUpLoad : true
         });
     }
+
 }
 const mapStateToProps = (state) => ({
     mallNavList: state.shops.mallNavList,

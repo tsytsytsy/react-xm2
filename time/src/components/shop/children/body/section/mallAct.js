@@ -142,7 +142,7 @@ class MallAct extends Component {
 
 
             })
-        }, 300)
+        }, 2000)
     }
 
 }
